@@ -15,3 +15,7 @@
   position: sticky;
   top: 0;
 }
+
+.mat-sidenav {
+  background: #e0e0e0;  /* replace skyblue with any color */ 
+}
