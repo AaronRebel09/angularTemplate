@@ -16,6 +16,13 @@
   top: 0;
 }
 
-.mat-sidenav {
-  background: #e0e0e0;  /* replace skyblue with any color */ 
+.example-stretched-tabs {
+  max-width: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
