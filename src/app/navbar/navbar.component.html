@@ -1,27 +1,17 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav-content>    
-    <mat-toolbar color="primary" class="elevation-appbar">
-      <mat-toolbar-row>
-          <nav mat-tab-nav-bar
-               mat-stretch-tabs
-               class="center"
-               [backgroundColor]="'primary'"
-               [color]="'accent'">
-            <a mat-tab-link
-               *ngFor="let link of navLinks"
-               [routerLink]="link.link"
-               routerLinkActive #rla="routerLinkActive"
-               [active]="rla.isActive">
-              <mat-icon class="example-tab-icon">{{link.icon}}</mat-icon>
-              {{link.label}}
-            </a>
-          </nav>
-      </mat-toolbar-row>
-    </mat-toolbar>
-    <!-- Add Content Here -->
-    <router-outlet></router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<nav mat-tab-nav-bar
+     mat-stretch-tabs
+     class="center"
+     [backgroundColor]="'primary'"
+     [color]="'accent'">
+  <a mat-tab-link
+     *ngFor="let link of navLinks"
+     [routerLink]="link.link"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+        <mat-icon class="example-tab-icon">{{link.icon}}</mat-icon>
+        {{link.label}}
+  </a>
+</nav>
 
 <!--<mat-sidenav-->
 <!--#drawer-->
@@ -104,3 +94,9 @@
     <!--</mat-button-toggle-group>-->
   <!--</div>-->
 <!--</mat-toolbar-row>-->
+
+<!--Top App Bar-->
+<!--<mat-toolbar color="primary" class="elevation-appbar">-->
+  <!--<mat-toolbar-row>-->
+  <!--</mat-toolbar-row>-->
+<!--</mat-toolbar>-->
