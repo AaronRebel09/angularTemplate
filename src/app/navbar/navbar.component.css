@@ -16,9 +16,20 @@
   top: 0;
 }
 
+.center-spacer{
+  justify-content: center;
+}
+
+.right-spacer {
+  flex: 1 1 auto;
+}
+
 .center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
   width: 100%;
+  max-width: 800px;
+  background-color: aquamarine;
 }
