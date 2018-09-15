@@ -16,13 +16,9 @@
   top: 0;
 }
 
-.example-stretched-tabs {
-  max-width: 100%;
-}
-
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
 }

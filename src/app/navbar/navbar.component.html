@@ -33,60 +33,81 @@
         </button>
       </mat-toolbar-row>
       <mat-toolbar-row>
-        <div>
-          <mat-button-toggle-group #colorToggle="matButtonToggleGroup"
-                                   value="primary"
-                                   aria-label="Change color">
-            <mat-button-toggle value="primary"> Primary </mat-button-toggle>
-            <mat-button-toggle value="accent"> Accent </mat-button-toggle>
-          </mat-button-toggle-group>
-          <span class="example-button-toggle-label"> Color </span>
-        </div>
-
-        <div>
-          <mat-button-toggle-group #backgroundColorToggle="matButtonToggleGroup"
-                                   value="primary"
-                                   aria-label="Change color">
-            <mat-button-toggle value="primary"> Primary </mat-button-toggle>
-            <mat-button-toggle value="accent"> Accent </mat-button-toggle>
-          </mat-button-toggle-group>
-          <span class="example-button-toggle-label"> Background Color </span>
-        </div>
-      </mat-toolbar-row>
-      <mat-toolbar-row>
-        <mat-tab-group mat-stretch-tabs [color]="colorToggle.value" [backgroundColor]="backgroundColorToggle.value"
-                       class="example-stretched-tabs center">
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon class="example-tab-icon">home</mat-icon>
-              Home
-            </ng-template>
-          </mat-tab>
-
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon class="example-tab-icon">work</mat-icon>
-              Work
-            </ng-template>
-          </mat-tab>
-
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon class="example-tab-icon">people</mat-icon>
-              Blog
-            </ng-template>
-          </mat-tab>
-
-          <mat-tab>
-            <ng-template mat-tab-label>
-              <mat-icon class="example-tab-icon">contact_mail</mat-icon>
-              Contact
-            </ng-template>
-          </mat-tab>
-        </mat-tab-group>
+        <nav mat-tab-nav-bar
+             mat-stretch-tabs
+             class="center"
+             [backgroundColor]="'primary'"
+             [color]="'accent'">
+          <a mat-tab-link
+             *ngFor="let link of navLinks"
+             [routerLink]="link.link"
+             routerLinkActive #rla="routerLinkActive"
+             [active]="rla.isActive">
+              <mat-icon class="example-tab-icon">{{link.icon}}</mat-icon>
+              {{link.label}}
+          </a>
+        </nav>
       </mat-toolbar-row>
     </mat-toolbar>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
+<!--<mat-tab-group mat-stretch-tabs-->
+               <!--[color]="colorToggle.value"-->
+               <!--[backgroundColor]="backgroundColorToggle.value"-->
+               <!--class="example-stretched-tabs center">-->
+  <!--<mat-tab>-->
+    <!--<ng-template mat-tab-label>-->
+      <!--<mat-icon class="example-tab-icon">home</mat-icon>-->
+      <!--Home-->
+    <!--</ng-template>-->
+    <!--<a [routerLink]="['/first-page']"></a>-->
+  <!--</mat-tab>-->
+
+  <!--<mat-tab>-->
+    <!--<ng-template mat-tab-label>-->
+      <!--<mat-icon class="example-tab-icon">work</mat-icon>-->
+      <!--Work-->
+    <!--</ng-template>-->
+  <!--</mat-tab>-->
+
+  <!--<mat-tab>-->
+    <!--<ng-template mat-tab-label>-->
+      <!--<mat-icon class="example-tab-icon">people</mat-icon>-->
+      <!--Blog-->
+    <!--</ng-template>-->
+  <!--</mat-tab>-->
+
+  <!--<mat-tab>-->
+    <!--<ng-template mat-tab-label>-->
+      <!--<mat-icon class="example-tab-icon">contact_mail</mat-icon>-->
+      <!--Contact-->
+    <!--</ng-template>-->
+  <!--</mat-tab>-->
+<!--</mat-tab-group>-->
+
+<!-- Probar Colores para NAvBar-->
+<!--<mat-toolbar-row>-->
+  <!--<div>-->
+    <!--<span class="example-button-toggle-label"> Color </span>-->
+    <!--<mat-button-toggle-group #colorToggle="matButtonToggleGroup"-->
+                             <!--value="primary"-->
+                             <!--aria-label="Change color">-->
+      <!--<mat-button-toggle value="primary"> Primary </mat-button-toggle>-->
+      <!--<mat-button-toggle value="accent"> Accent </mat-button-toggle>-->
+    <!--</mat-button-toggle-group>-->
+  <!--</div>-->
+<!--</mat-toolbar-row>-->
+<!--<mat-toolbar-row>-->
+  <!--<div>-->
+    <!--<span class="example-button-toggle-label"> Background Color </span>-->
+    <!--<mat-button-toggle-group #backgroundColorToggle="matButtonToggleGroup"-->
+                             <!--value="primary"-->
+                             <!--aria-label="Change color">-->
+      <!--<mat-button-toggle value="primary"> Primary </mat-button-toggle>-->
+      <!--<mat-button-toggle value="accent"> Accent </mat-button-toggle>-->
+    <!--</mat-button-toggle-group>-->
+  <!--</div>-->
+<!--</mat-toolbar-row>-->

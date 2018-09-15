@@ -1,7 +1,4 @@
 import { Component } from '@angular/core';
-import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-navbar',
@@ -9,12 +6,32 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches)
-    );
-
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  navLinks = [
+    {
+      label: 'Home',
+      icon: 'home',
+      link: './first-page',
+      index: 0
+    },
+    {
+      label: 'Work',
+      icon: 'work',
+      link: './second-page',
+      index: 1
+    },
+    {
+      label: 'Blog',
+      icon: 'people',
+      link: './third-page',
+      index: 2
+    },
+    {
+      label: 'Contact',
+      icon: 'contact_mail',
+      link: './fourth-page',
+      index: 3
+    }
+  ];
+  constructor() {}
 
   }
