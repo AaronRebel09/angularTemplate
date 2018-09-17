@@ -3,7 +3,7 @@
   }
   
   .example-header-image {
-    background-image: url('../../assets/aron.jpg');
+    background-image: url('../../assets/aron/aron.jpg');
     background-size: cover;
   }
 

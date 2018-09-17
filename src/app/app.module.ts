@@ -15,6 +15,9 @@ import { FirstPageComponent } from './first-page/first-page.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { ThirdPageComponent } from './third-page/third-page.component';
 import { FourthPageComponent } from './fourth-page/fourth-page.component';
+// Flex Layout
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 const appRoutes: Routes = [
   { path: 'first-page', component: FirstPageComponent },
@@ -37,6 +40,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MaterialModule,
     LayoutModule,
+    FlexLayoutModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

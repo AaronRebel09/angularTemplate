@@ -2,10 +2,10 @@
     max-width: 400px;    
   }
   
-  .example-header-image {
+ /* .example-header-image {
     background-image: url('../../assets/aron.jpg');
     background-size: cover;
-  }
+  }*/
 
   .zelda{        
     max-height: 400px;
@@ -21,4 +21,8 @@
 .header {
   height: 20px;
 }
-  
+
+.img {
+  width: 100%;
+  margin-bottom: 18%;
+}
