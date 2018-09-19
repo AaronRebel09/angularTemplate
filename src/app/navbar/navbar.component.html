@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <mat-toolbar [color]="'primary'" class="elevation-appbar">
     <nav mat-tab-nav-bar
     mat-stretch-tabs
@@ -14,6 +15,26 @@
       </a>
     </nav>  
 </mat-toolbar>        
+=======
+<mat-toolbar color="primary" class="elevation-appbar">
+  <mat-toolbar-row>
+    <nav mat-tab-nav-bar
+         mat-stretch-tabs
+         class="center"
+         [backgroundColor]="'primary'"
+         [color]="'accent'">
+      <a mat-tab-link
+         *ngFor="let link of navLinks"
+         [routerLink]="link.link"
+         routerLinkActive #rla="routerLinkActive"
+         [active]="rla.isActive">
+        <mat-icon class="example-tab-icon">{{link.icon}}</mat-icon>
+        {{link.label}}
+      </a>
+    </nav>
+  </mat-toolbar-row>
+</mat-toolbar>
+>>>>>>> ce81469ab38c64a843eb24d1608dc02a03609521
 <!--<mat-sidenav-->
 <!--#drawer-->
 <!--class="sidenav"-->
