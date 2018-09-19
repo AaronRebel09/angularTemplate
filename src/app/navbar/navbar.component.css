@@ -1,6 +1,6 @@
 .mat-toolbar.mat-primary {
   position: sticky;
-  top: 0;
+  top: 100;
 }
 
 .center-spacer{
