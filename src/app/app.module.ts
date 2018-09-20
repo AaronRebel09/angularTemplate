@@ -20,6 +20,9 @@ import {FlexLayoutModule} from '@angular/flex-layout';
 
 
 const appRoutes: Routes = [
+  {path: '',
+  redirectTo: '/first-page',
+  pathMatch : 'full'},
   { path: 'first-page', component: FirstPageComponent },
   { path: 'second-page', component: SecondPageComponent },
   { path: 'third-page', component: ThirdPageComponent },

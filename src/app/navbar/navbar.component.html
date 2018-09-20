@@ -9,8 +9,10 @@
       [routerLink]="link.link"
       routerLinkActive #rla="routerLinkActive"
       [active]="rla.isActive">
-       <mat-icon class="example-tab-icon">{{link.icon}}</mat-icon>
-       {{link.label}}
+        <div fxLayout="column" fxLayoutAlign="center center" class="containerNavbar">
+          <mat-icon class="example-tab-icon">{{link.icon}}</mat-icon>
+          <span>{{link.label}}</span>
+        </div>
       </a>
     </nav>  
 </mat-toolbar>        

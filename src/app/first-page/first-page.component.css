@@ -1,25 +1,8 @@
-.example-card {
-    max-width: 400px;    
-  }
-  
- /* .example-header-image {
-    background-image: url('../../assets/aron.jpg');
-    background-size: cover;
-  }*/
-
-  .zelda{        
-    max-height: 400px;
-  }
-
-  .center {
-    display: block;  
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.header {
-  height: 20px;
+.container{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 2px;
 }
 
 .img {

@@ -11,9 +11,9 @@
   flex: 1 1 auto;
 }
 
-.center {
-  display: block;
-  margin: auto;  
-  width: 100%;
-  max-width: 800px;  
+.containerNavbar{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 4px;
+  padding-bottom: 1px;
 }
