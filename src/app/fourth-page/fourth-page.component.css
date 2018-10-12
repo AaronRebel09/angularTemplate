@@ -1,16 +1,40 @@
-.example-header-image {
-  background-image: url('../../assets/aron/aron.jpg');
-  background-size: cover;
+/*.example-header-image {*/
+  /*background-image: url('../../assets/aron/aron.jpg');*/
+  /*background-size: cover;*/
+/*}*/
+
+/*.card-picture {*/
+  /*width: 100%;*/
+  /*margin-bottom: 2%;*/
+  /*margin-top: 2%;*/
+  /*max-width: fit-content;*/
+/*}*/
+
+/*.aron{*/
+  /*max-height: 400px;*/
+  /*max-width: 400px;*/
+/*}*/
+.contactainer {
+  display: flex;
+  flex-direction: column;
 }
 
-.card-picture {
+.container{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 8px;
+  padding-bottom: 2px;
+}
+
+.center {
+  display: block;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.contactainer > * {
   width: 100%;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  max-width: fit-content;
-}
-
-.aron{
-  max-height: 400px;
-  max-width: 400px;
+  max-width: 800px;
 }
