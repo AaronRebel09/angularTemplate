@@ -1,11 +1,19 @@
 .container{
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 8px;
+  padding-top: 2px;
   padding-bottom: 2px;
+}
+
+.center {
+  display: block;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .img {
   width: 100%;
-  margin-bottom: 18%;
+  max-width: 250px;
 }
