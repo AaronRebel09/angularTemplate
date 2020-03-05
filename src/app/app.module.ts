@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { GoogleChartsModule } from 'angular-google-charts';
 
 import { AppComponent } from './app.component';
 
@@ -10,11 +12,14 @@ import { MaterialModule } from './material';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { RouterModule, Routes } from '@angular/router';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
 // Routes
 import { FirstPageComponent } from './first-page/first-page.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { ThirdPageComponent } from './third-page/third-page.component';
 import { FourthPageComponent } from './fourth-page/fourth-page.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 const appRoutes: Routes = [
   { path: 'first-page', component: FirstPageComponent },
@@ -36,8 +41,13 @@ const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
+    MatButtonModule,
+    MatInputModule,
     LayoutModule,
-    RouterModule.forRoot(appRoutes)
+    HttpClientModule,
+    GoogleChartsModule.forRoot(),
+    RouterModule.forRoot(appRoutes),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

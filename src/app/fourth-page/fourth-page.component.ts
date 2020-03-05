@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fourth-page.component.css']
 })
 export class FourthPageComponent implements OnInit {
-
   constructor() { }
+  fireEvent(e) {
+    console.log(e.type);
+  }
 
   ngOnInit() {
   }
