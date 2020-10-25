@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet" />
 <mat-toolbar [color]="'primary'" class="elevation-appbar">
     <nav mat-tab-nav-bar
     mat-stretch-tabs
@@ -10,12 +12,15 @@
       routerLinkActive #rla="routerLinkActive"
       [active]="rla.isActive">
         <div fxLayout="column" fxLayoutAlign="center center" class="containerNavbar">
-          <mat-icon class="example-tab-icon">{{link.icon}}</mat-icon>
+<!--          <mat-icon fontSet="material-icons-outlined">{{link.icon}}</mat-icon>-->
           <span>{{link.label}}</span>
         </div>
       </a>
     </nav>
-</mat-toolbar>        
+</mat-toolbar>
+<!--<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet" />-->
+<!--fontSet="material-icons-outlined"-->
 <!--<mat-sidenav-->
 <!--#drawer-->
 <!--class="sidenav"-->

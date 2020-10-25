@@ -5,3 +5,12 @@
     margin-right: auto;
     width: 50%;
 }
+
+p {
+  font-family: Lato, serif;
+}
+
+.imageGithub{
+  width: 10%;
+  height: 10%;
+}

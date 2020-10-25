@@ -1,4 +1,5 @@
 @import '~@angular/material/theming';
+@import '/assets/timeline/timeline.theme.scss';
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -24,7 +25,7 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 
 .elevation-appbar {
   // Adds a shadow for elevation level 2 with default color and full opacity:
-  @include mat-elevation(4);
+  @include mat-elevation(8);
 }
 
 .elevation-card {
@@ -67,7 +68,7 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 
 .elevation {
     @include mat-elevation-transition;
-    @include mat-elevation(2);
+    @include mat-elevation(8);
 
     &:active {
       @include mat-elevation(16);
@@ -76,3 +77,4 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 
 
 @include angular-material-theme($candy-app-theme);
+@include mgl-timeline-theme($candy-app-theme);

@@ -17,3 +17,21 @@
   padding-top: 4px;
   padding-bottom: 1px;
 }
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.footer-widgets {
+  background: #0F96C6;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.65);
+}
+.section, .site-footer, .footer-widgets {
+  padding: 3rem 1.5rem;
+}
+article, aside, figure, footer, header, hgroup, section {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}

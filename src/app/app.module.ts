@@ -17,6 +17,8 @@ import { ThirdPageComponent } from './third-page/third-page.component';
 import { FourthPageComponent } from './fourth-page/fourth-page.component';
 // Flex
 import {FlexLayoutModule} from '@angular/flex-layout';
+// Time Line
+import { MglTimelineModule } from 'angular-mgl-timeline'
 
 
 const appRoutes: Routes = [
@@ -44,7 +46,8 @@ const appRoutes: Routes = [
     MaterialModule,
     LayoutModule,
     RouterModule.forRoot(appRoutes),
-    FlexLayoutModule
+    FlexLayoutModule,
+    MglTimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
