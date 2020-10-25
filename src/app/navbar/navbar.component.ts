@@ -8,25 +8,25 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   navLinks = [
     {
-      label: 'Comienza Aqui',
+      label: 'comienza aqui',
       icon: 'home',
       link: './first-page',
       index: 0
     },
     {
-      label: 'Portafolio',
+      label: 'portafolio',
       icon: 'work',
       link: './second-page',
       index: 1
     },
     {
-      label: 'News',
+      label: 'noticias',
       icon: 'people',
       link: './third-page',
       index: 2
     },
     {
-      label: 'Sobre Aaron',
+      label: 'acerca de Aaron',
       icon: 'contact_mail',
       link: './fourth-page',
       index: 3

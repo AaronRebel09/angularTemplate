@@ -33,8 +33,8 @@ export class SecondPageComponent implements OnInit {
   // tslint:disable-next-line:member-ordering
   entries = [
     {
-      header: 'UNAM Blog',
-      content: 'piccinelli blog, stack: polymer javascript',
+      header: 'UNAM',
+      content: 'blog, stack: polymer javascript',
       side: '2017',
       index: 0
     },

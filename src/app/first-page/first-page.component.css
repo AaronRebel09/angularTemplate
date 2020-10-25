@@ -5,6 +5,14 @@
   padding-bottom: 2px;
 }
 
+.leyenda {
+  background: #eaeaea;
+  font-size: 0.8rem;
+  padding: .5rem 0;
+  margin-top: -40px;
+  text-align: center;
+}
+
 .center {
   display: block;
   padding: 20px;
@@ -19,8 +27,9 @@
 }
 
 .responsive {
-  width: 100%;
-  height: auto;
+  width: 80%;
+  height: 80%;
+  padding: 50px;
 }
 
 .fa {
@@ -134,3 +143,7 @@
 /*.item-5 {*/
 /*  background: whitesmoke;*/
 /*}*/
+
+.site-footer{
+  background-color: lightskyblue;
+}

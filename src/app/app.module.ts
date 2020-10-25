@@ -18,7 +18,7 @@ import { FourthPageComponent } from './fourth-page/fourth-page.component';
 // Flex
 import {FlexLayoutModule} from '@angular/flex-layout';
 // Time Line
-import { MglTimelineModule } from 'angular-mgl-timeline'
+import { MglTimelineModule } from 'angular-mgl-timeline';
 
 
 const appRoutes: Routes = [

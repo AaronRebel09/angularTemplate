@@ -10,7 +10,7 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$candy-app-primary: mat-palette($mat-grey, A100);
+$candy-app-primary: mat-palette($mat-light-blue, A100);
 $candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
@@ -45,7 +45,7 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 .elevation-appbar {
     // Adds a shadow for elevation level 2 with default color and full opacity:
     @include mat-elevation-transition;
-    @include mat-elevation(2);
+    @include mat-elevation(12);
 
     &:active {
       @include mat-elevation(16);
