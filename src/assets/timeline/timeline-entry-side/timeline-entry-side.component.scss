@@ -1,0 +1,15 @@
+mgl-timeline-entry-side {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    text-align: center;
+
+    &.alternate {
+        left: -100%;
+    }
+
+    &.mobile {
+        display: none;
+    }
+}

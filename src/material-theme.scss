@@ -1,15 +1,16 @@
 @import '~@angular/material/theming';
-/* // Plus imports for other components in your app.
+@import '/assets/timeline/timeline.theme.scss';
+// Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once! */
+// Be sure that you only ever include this mixin once!
 @include mat-core();
 
-/* // Define the palettes for your theme using the Material Design palettes available in palette.scss
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/ */
-$candy-app-primary: mat-palette($mat-light-blue);
+// hue. Available color palettes: https://material.io/design/color/
+$candy-app-primary: mat-palette($mat-light-blue, A100);
 $candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
@@ -18,18 +19,22 @@ $candy-app-warn:    mat-palette($mat-red);
 // Create the theme object (a Sass map containing all of the palettes).
 $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
 
-/* // Include theme styles for core and each component used in your app.
+// Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
-// that you are using. */
+// that you are using.
 
 .elevation-appbar {
   // Adds a shadow for elevation level 2 with default color and full opacity:
-  @include mat-elevation(2);
+  @include mat-elevation(8);
 }
 
 .elevation-card {
-    // Adds a shadow for elevation level 2 with default color and full opacity:
+  @include mat-elevation-transition;
+  @include mat-elevation(1);
+
+  &:active {
     @include mat-elevation(8);
+  }
   }
 
 .elevation-fab {
@@ -40,8 +45,8 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 .elevation-appbar {
     // Adds a shadow for elevation level 2 with default color and full opacity:
     @include mat-elevation-transition;
-    @include mat-elevation(2);
-  
+    @include mat-elevation(12);
+
     &:active {
       @include mat-elevation(16);
     }
@@ -57,14 +62,14 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
   @include mat-elevation(2, #e91e63, 0.8);
 }
 
-.elevation-dialog{    
-    @include mat-elevation(24);      
+.elevation-dialog{
+    @include mat-elevation(24);
 }
 
 .elevation {
     @include mat-elevation-transition;
-    @include mat-elevation(2);
-  
+    @include mat-elevation(8);
+
     &:active {
       @include mat-elevation(16);
     }
@@ -72,3 +77,4 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 
 
 @include angular-material-theme($candy-app-theme);
+@include mgl-timeline-theme($candy-app-theme);

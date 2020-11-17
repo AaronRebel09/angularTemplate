@@ -44,7 +44,7 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": false
             }
           }
         },
@@ -125,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "angularmdc"
+  "defaultProject": "angularmdc",
+  "cli": {
+    "analytics": "f5de8dc9-3f03-407c-aa8d-73a9d06de087"
+  }
 }

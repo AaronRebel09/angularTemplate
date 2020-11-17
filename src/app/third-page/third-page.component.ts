@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./third-page.component.css']
 })
 export class ThirdPageComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {

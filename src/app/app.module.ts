@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule} from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -15,8 +15,16 @@ import { FirstPageComponent } from './first-page/first-page.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { ThirdPageComponent } from './third-page/third-page.component';
 import { FourthPageComponent } from './fourth-page/fourth-page.component';
+// Flex
+import {FlexLayoutModule} from '@angular/flex-layout';
+// Time Line
+import { MglTimelineModule } from 'angular-mgl-timeline';
+
 
 const appRoutes: Routes = [
+  {path: '',
+  redirectTo: '/first-page',
+  pathMatch : 'full'},
   { path: 'first-page', component: FirstPageComponent },
   { path: 'second-page', component: SecondPageComponent },
   { path: 'third-page', component: ThirdPageComponent },
@@ -37,7 +45,9 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     MaterialModule,
     LayoutModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FlexLayoutModule,
+    MglTimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
