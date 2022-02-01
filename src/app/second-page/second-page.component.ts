@@ -55,6 +55,18 @@ export class SecondPageComponent implements OnInit {
       content: 'Automatización de Procesos Internos, stack: java14 rest soap oracle mongo spring springboot microservices',
       side: '2020',
       index: 3
+    },
+    {
+      header: 'Banco Azteca',
+      content: 'Credito en Efectivo, stack: java12 rest oracle spring springboot web cloud microservices docker kubernetes rancher',
+      side: '2021',
+      index: 4
+    },
+    {
+      header: 'Mercado Libre',
+      content: 'Fintech Mercado Pago, stack: Go 1.17 rest batch message queue mysql aws kvs gin docker microservices',
+      side: '2022',
+      index: 5
     }
   ];
 
